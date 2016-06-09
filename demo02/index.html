@@ -8,12 +8,16 @@
   <body>
     <div id="example"></div>
     <script type="text/babel">
+      // 定义一个names数组
       var names = ['Alice', 'Emily', 'Kate'];
 
       ReactDOM.render(
         <div>
         {
+          // names是一个数组，数组的map方法将数组里的每一项逐个处理
           names.map(function (name) {
+            // 这里的处理就是输出一个 div
+            // {name} 就是将数组里的值 取出来。
             return <div>Hello, {name}!</div>
           })
         }

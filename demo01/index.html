@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- 引入react -->
     <script src="../build/react.js"></script>
     <script src="../build/react-dom.js"></script>
+    <!-- 使浏览器支持babel -->
     <script src="../build/browser.min.js"></script>
   </head>
   <body>
+    <!-- 定义一个id为example的div -->
     <div id="example"></div>
+    <!-- 这个是babel，支持ES6 -->
     <script type="text/babel">
+      // 这里是js的注释！
       ReactDOM.render(
+        // render是个函数方法，
+        // 将 h1 标签 的内容渲染到 id为example的 div上，
+        // render方法里只能有一个顶级html标签，里面可以嵌套多个标签，就像写正常html页面一样。
         <h1>Hello, world!</h1>,
         document.getElementById('example')
       );
     </script>
   </body>
 </html>
+
+<!-- 这里是html的注释！ -->
