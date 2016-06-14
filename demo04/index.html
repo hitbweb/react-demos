@@ -13,12 +13,12 @@
     <!--这个是bable，支持es6-->
     <script type="text/babel">
       var HelloMessage = React.createClass({
-     
+
         render: function() {
           return <h1>Hello {this.props.name}</h1>;
         }
       });
-// render是个函数方法，
+// render是个函数方法
       ReactDOM.render(
         <HelloMessage name="John" />,
         document.getElementById('example')
