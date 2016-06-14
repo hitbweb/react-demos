@@ -8,12 +8,18 @@
   <body>
     <div id="example"></div>
     <script type="text/babel">
+    //定义一个类
       var HelloMessage = React.createClass({
+      //定义一个方法
+
+      
         render: function() {
           return <h1>Hello {this.props.name}</h1>;
         }
       });
 
+
+//调用HelloMessage类 传递参数name  渲染到'example'
       ReactDOM.render(
         <HelloMessage name="John" />,
         document.getElementById('example')
