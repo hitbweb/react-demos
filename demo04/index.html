@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- 引入react -->
     <script src="../build/react.js"></script>
     <script src="../build/react-dom.js"></script>
+     <!-- 使浏览器支持babel -->
     <script src="../build/browser.min.js"></script>
   </head>
   <body>
+  <!-- 定义一个example的div -->
     <div id="example"></div>
+    <!--这个是bable，支持es6-->
     <script type="text/babel">
-    //定义一个类
       var HelloMessage = React.createClass({
-      //定义一个方法
 
-      
         render: function() {
           return <h1>Hello {this.props.name}</h1>;
         }
       });
-
-
-//调用HelloMessage类 传递参数name  渲染到'example'
+// render是个函数方法
       ReactDOM.render(
         <HelloMessage name="John" />,
         document.getElementById('example')

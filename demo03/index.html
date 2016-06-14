@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html>
   <head>
+ <!--引入react-->
     <script src="../build/react.js"></script>
     <script src="../build/react-dom.js"></script>
     <script src="../build/browser.min.js"></script>
   </head>
   <body>
+  <!--这是一个id为example的div-->
     <div id="example"></div>
+    <!--这个是bable，支持es6-->
     <script type="text/babel">
+
+
+
+
+
+
     //定义一个数组
 
       var arr = [
         <h1>Hello world!</h1>,
         <h2>React is awesome</h2>,
       ];
+
+      //render函数方法，将div渲染到id为example的div上  
+
       //将数组内容渲染到'example'
+
       ReactDOM.render(
         <div>{arr}</div>,
         document.getElementById('example')
