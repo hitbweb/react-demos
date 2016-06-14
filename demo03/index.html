@@ -8,19 +8,15 @@
   <body>
     <div id="example"></div>
     <script type="text/babel">
-
     //定义一个数组
+
       var arr = [
-      //定义一个数组
         <h1>Hello world!</h1>,
         <h2>React is awesome</h2>,
       ];
       //将数组内容渲染到'example'
       ReactDOM.render(
-      // render是个函数方法，
-        // 将 <div>标签 的内容渲染到 id为example的 div上，
         <div>{arr}</div>,
-        //把arr里面的值取出来
         document.getElementById('example')
       );
     </script>
