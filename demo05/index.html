@@ -7,6 +7,7 @@
   </head>
   <body>
     <div id="example"></div>
+    //react提供一个方法React.Children来处理this.props.children。
     <script type="text/babel">
       var NotesList = React.createClass({
         render: function() {
@@ -21,12 +22,13 @@
           );
         }
       });
-
+//noteslist 组有两个 span 子节点都可以通过 this.props.children 读取，然后显示内容。
       ReactDOM.render(
         <NotesList>
           <span>hello</span>
           <span>world</span>
         </NotesList>,
+
         document.getElementById('example')
       );
     </script>
